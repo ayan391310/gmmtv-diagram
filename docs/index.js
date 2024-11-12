@@ -13,6 +13,9 @@ var edges = new vis.DataSet();
 var real_life_kiss = new vis.DataSet();
 var tv_show_kisses = new vis.DataSet();
 
+var real_life_nodes = new vis.DataSet();
+var tv_show_nodes = new vis.DataSet();
+
 var DIR = "assets";
 
 // Add nodes
@@ -44,7 +47,19 @@ for (let i = 0; i < actors.length; i++) {
         }
     }
 
-    nodes.add(node_object); 
+    const all_kisses = kiss.filter((k) => k.input === node.id || k.output === node.id);
+    if (all_kisses.length > 0) {
+        nodes.add(node_object); 
+    }
+    const real_life_kisses = all_kisses.filter((k) => k.introduced_at.length === 0 );
+    if (real_life_kisses.length > 0) {
+        real_life_nodes.add(node_object);
+    }
+
+    const tv_show_kisses = all_kisses.filter((k) => k.introduced_at.length > 0 );
+    if (tv_show_kisses.length > 0) {
+        tv_show_nodes.add(node_object);
+    }
 }
 
 // Add edges
@@ -100,12 +115,12 @@ var all_data = {
 };
 
 var real_life_data = {
-    nodes: nodes,
+    nodes: real_life_nodes,
     edges: real_life_kiss
 }
 
 var tv_show_data = {
-    nodes: nodes,
+    nodes: tv_show_nodes,
     edges: tv_show_kisses
 }
 
