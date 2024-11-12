@@ -69,11 +69,14 @@ for (let i = 0; i < kiss.length; i++) {
     edge_obj.arrows = { to: { enabled: true, type: "arrow" }};
     if (kiss[i].on_the_lips) {
         edge_obj.arrows.from = { enabled: true, type: "arrow" };
+    } else {
+        edge_obj.color = "green";
     }
+    
     if (kiss[i].dating) {
         edge_obj.color = "pink";
     } else if (in_real_life === true) {
-        edge_obj.color = "green";
+        edge_obj.color = "purple";
     }
 
     edges.add(edge_obj);

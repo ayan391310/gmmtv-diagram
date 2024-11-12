@@ -295,7 +295,7 @@ const file = {
 				"泡芙"
 			],
 			"role": 1,
-			"cp_name": null
+			"cp_name": "PerthSanta"
 		},
 		{
 			"id": 24,
@@ -306,7 +306,7 @@ const file = {
 				"奇萌"
 			],
 			"role": 0,
-			"cp_name": null
+			"cp_name": "PerthChimon"
 		},
 		{
 			"id": 25,
@@ -342,7 +342,7 @@ const file = {
 				"饼子"
 			],
 			"role": 1,
-			"cp_name": "OhmNanon"
+			"cp_name": "OhmLeng"
 		},
 		{
 			"id": 28,
@@ -481,7 +481,73 @@ const file = {
 			"role": 1,
 			"cp_name": "MarcPoon"
 		},
-
+		{
+			"id": 41,
+			"name": "Krist",
+			"also_known_as": [
+				"Perawat Sangpotirat",
+				"คริส พีรวัส แสงโพธิรัตน์",
+				"王慧侦"
+			],
+			"role": 1,
+			"cp_name": "KristSingto"
+		},
+		{
+			"id": 42,
+			"name": "Singto",
+			"also_known_as": [
+				"Prachaya Ruangroj",
+				"สิงโต ปราชญา เรืองโรจน์",
+				"狮子"
+			],
+			"role": 0,
+			"cp_name": "KristSingto"
+		},
+		{
+			"id": 43,
+			"name": "Tay",
+			"also_known_as": [
+				"Tawan Vihokratana",
+				"เต ตะวัน วิหครัตน์",
+				"呆呆湾",
+				"林阳"
+			],
+			"role": 1,
+			"cp_name": "TayNew"
+		},
+		{
+			"id": 44,
+			"name": "New",
+			"also_known_as": [
+				"Thitipoom Techaapaikhun",
+				"นิว ฐิติภูมิ เตชะอภัยคุณ",
+				"郑明心"
+			],
+			"role": 0,
+			"cp_name": "TayNew"
+		},
+		{
+			"id": 45,
+			"name": "Off",
+			"also_known_as": [
+				"Jumpol Adulkittiporn",
+				"ออฟ จุมพล อดุลกิตติพร",
+				"关钟鹏"
+			],
+			"role": 1,
+			"cp_name": "OffGun"
+		},
+		{
+			"id": 46,
+			"name": "Gun",
+			"also_known_as": [
+				"Atthaphan Phunsawat",
+				"กัน อรรถพันธ์ พูลสวัสดิ์",
+				"滚宝"
+			],
+			"role": 0,
+			"cp_name": "OffGun"
+		},
 		
 	],
 	"kiss": [
@@ -623,8 +689,7 @@ const file = {
 			"output": 9,
 			"weight": 1,
 			"introduced_at": ["Sweet Tooth, Good Doctor"],
-			"on_the_lips": true,
-			"indirective": true
+			"on_the_lips": true
 		},
 		{
 			"id": 15,
@@ -981,7 +1046,72 @@ const file = {
 			"weight": 1,
 			"introduced_at": ["Never Too Late"],
 			"on_the_lips": true
-		}
+		},
+		{
+			"id": 53,
+			"input": 41,
+			"output": 42,
+			"weight": 1,
+			"introduced_at": ["Sotus: The Series"],
+			"on_the_lips": true
+		},
+		{
+			"id": 54,
+			"input": 27,
+			"output": 42,
+			"weight": 1,
+			"introduced_at": ["He's Coming to Me"],
+			"on_the_lips": true
+		},
+		{
+			"id": 55,
+			"input": 41,
+			"output": 44,
+			"weight": 1,
+			"introduced_at": ["Love Beyond Frontier"],
+			"on_the_lips": true
+		},
+		{
+			"id": 56,
+			"input": 43,
+			"output": 44,
+			"weight": 1,
+			"introduced_at": ["Dark Blue Kiss", "Cherry Magic Thailand"],
+			"on_the_lips": true
+		},
+		{
+			"id": 57,
+			"input": 45,
+			"output": 46,
+			"weight": 1,
+			"introduced_at": ["Not Me", "Cooking Crush"],
+			"on_the_lips": true
+		},
+		{
+			"id": 58,
+			"input": 43,
+			"output": 46,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": true
+		},
+		{
+			"id": 59,
+			"input": 44,
+			"output": 25,
+			"weight": 1,
+			"introduced_at": ["Water Boyy: The Series"],
+			"on_the_lips": true
+		},
+		{
+			"id": 60,
+			"input": 11,
+			"output": 25,
+			"weight": 1,
+			"introduced_at": ["Moonlight Chicken"],
+			"on_the_lips": false
+		},
+
 	],
 	"tv_series": {
 		"The Eclipse": {
@@ -1025,6 +1155,9 @@ const file = {
 		},
 		"OhmNanon": {
 			"color": "#D4262A"
+		},
+		"OffGun": {
+			"color": "#BFDF8C"
 		}
 	}
 }
