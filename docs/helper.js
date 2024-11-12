@@ -306,7 +306,7 @@ const file = {
 				"奇萌"
 			],
 			"role": 0,
-			"cp_name": "PerthChimon"
+			"cp_name": null
 		},
 		{
 			"id": 25,
@@ -1052,7 +1052,7 @@ const file = {
 			"input": 41,
 			"output": 42,
 			"weight": 1,
-			"introduced_at": ["Sotus: The Series"],
+			"introduced_at": ["Sotus: The Series", "Sotus S : The Series", "Our Skyy : Arthit Kongpob"],
 			"on_the_lips": true
 		},
 		{
@@ -1158,6 +1158,12 @@ const file = {
 		},
 		"OffGun": {
 			"color": "#BFDF8C"
+		},
+		"TayNew": {
+			"color": "#8CC5E5"
+		},
+		"KristSingto": {
+			"color": "#A21019"
 		}
 	}
 }
