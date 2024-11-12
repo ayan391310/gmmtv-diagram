@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#mynetwork {
+    width: 100%;
+    height: 85vh;
+    border: 1px solid lightslategrey;
+    margin-top: 1%;
+    padding: auto;
+}
+
+.header {
+    width: 100%; /** Use 100% to fill the width of the page **/
+    height: fit-content;
+    color: white;
+    font-family: monospace;
+    position: sticky;
+    text-align: center;
+    padding: 0.8%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, rgba(40,118,169), rgba(47,47,117));
+}
+
+#myresult {
+    width: inherit;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.wrapper > * {
+    flex: 1 100%;
+}
+
+.search-field-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+    align-content: flex-start;
+    padding: 1%;
+    margin: 0%;
+    gap: 0;
+}
+
+.search-field {
+    flex: auto;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: content;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+    width: 100%;
+}
+
+.result-field {
+    border: 1px burlywood solid;
+    padding: 1%;
+    margin: 1%;
+    font-size: smaller;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+    /* We tell both sidebars to share a row */
+    .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+/* We invert order of first sidebar and main
+    * And tell the main element to take twice as much width as the other two sidebars 
+    */
+    .main { flex: 3 0px; }
+    .aside-1 { 
+        flex: 1;
+        order: 1; 
+        width: 40vw;
+    }
+    .main    { order: 2; }
+    .footer { 
+        order: 3;
+        width: 100%;
+    }
+}
