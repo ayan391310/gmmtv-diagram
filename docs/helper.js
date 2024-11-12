@@ -548,6 +548,80 @@ const file = {
 			"role": 0,
 			"cp_name": "OffGun"
 		},
+		{
+			"id": 47,
+			"name": "Winny",
+			"also_known_as": [
+				"Thanawin Pholcharoenrat",
+				"วินนี่ ธนวินท์ ผลเจริญรัตน์",
+				"温妮"
+			],
+			"role": 1,
+			"cp_name": "WinnySatang"
+		},
+		{
+			"id": 48,
+			"name": "Satang",
+			"also_known_as": [
+				"Kittiphop Sereevichayasawat",
+				"สตางค์ กิตติภพ เสรีวิชยสวัสดิ์",
+				"撒糖"
+			],
+			"role": 0,
+			"cp_name": "WinnySatang"
+		},
+		{
+			"id": 49,
+			"name": "Prom",
+			"also_known_as": [
+				"Teepakron Kwanboon",
+				"พร้อม ทีปกร ขวัญบุญ"
+			],
+			"role": 1,
+			"cp_name": null
+		},
+		{
+			"id": 50,
+			"name": "Aun",
+			"also_known_as": [
+			],
+			"role": 1,
+			"cp_name": null
+		},
+		{
+			"id": 51,
+			"name": "Great",
+			"also_known_as": [
+			],
+			"role": 1,
+			"cp_name": null
+		},
+		{
+			"id": 52,
+			"name": "Inn",
+			"also_known_as": [
+			],
+			"role": 0,
+			"cp_name": null
+		},
+		{
+			"id": 53,
+			"name": "JJ",
+			"also_known_as": [
+			],
+			"role": 1,
+			"cp_name": null
+		},
+		{
+			"id": 54,
+			"name": "AJ",
+			"also_known_as": [
+			],
+			"role": 1,
+			"cp_name": null
+		},
+		
+
 		
 	],
 	"kiss": [
@@ -1111,7 +1185,318 @@ const file = {
 			"introduced_at": ["Moonlight Chicken"],
 			"on_the_lips": false
 		},
-
+		{
+			"id": 61,
+			"input": 28,
+			"output": 42,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 62,
+			"input": 44,
+			"output": 45,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 63,
+			"input": 43,
+			"output": 1,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 64,
+			"input": 28,
+			"output": 43,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 65,
+			"input": 47,
+			"output": 48,
+			"weight": 1,
+			"introduced_at": ["My School President", "We Are"],
+			"on_the_lips": true
+		},
+		{
+			"id": 66,
+			"input": 48,
+			"output": 6,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 67,
+			"input": 43,
+			"output": 26,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 68,
+			"input": 42,
+			"output": 44,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 69,
+			"input": 44,
+			"output": 42,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 70,
+			"input": 1,
+			"output": 43,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 71,
+			"input": 1,
+			"output": 45,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 72,
+			"input": 36,
+			"output": 18,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 73,
+			"input": 36,
+			"output": 47,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 74,
+			"input": 49,
+			"output": 47,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 75,
+			"input": 36,
+			"output": 48,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 76,
+			"input": 49,
+			"output": 48,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 77,
+			"input": 49,
+			"output": 6,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 78,
+			"input": 28,
+			"output": 13,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 79,
+			"input": 27,
+			"output": 13,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 80,
+			"input": 28,
+			"output": 23,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 81,
+			"input": 23,
+			"output": 28,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 82,
+			"input": 44,
+			"output": 52,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 83,
+			"input": 36,
+			"output": 22,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 84,
+			"input": 22,
+			"output": 36,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 85,
+			"input": 43,
+			"output": 28,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 86,
+			"input": 44,
+			"output": 3,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 87,
+			"input": 2,
+			"output": 53,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 88,
+			"input": 17,
+			"output": 36,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 89,
+			"input": 46,
+			"output": 36,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 90,
+			"input": 48,
+			"output": 36,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 91,
+			"input": 22,
+			"output": 47,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 92,
+			"input": 46,
+			"output": 44,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 93,
+			"input": 27,
+			"output": 23,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 94,
+			"input": 27,
+			"output": 36,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 95,
+			"input": 23,
+			"output": 27,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 96,
+			"input": 6,
+			"output": 35,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 97,
+			"input": 44,
+			"output": 3,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 98,
+			"input": 47,
+			"output": 17,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		},
+		{
+			"id": 99,
+			"input": 19,
+			"output": 17,
+			"weight": 1,
+			"introduced_at": [],
+			"on_the_lips": false
+		}
 	],
 	"tv_series": {
 		"The Eclipse": {

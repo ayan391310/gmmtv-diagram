@@ -6,8 +6,12 @@ const kiss = file["kiss"];
 const offical_cp = file["offical_cp"];
 // const tv_series = file["tv_series"];
 
+
 var nodes = new vis.DataSet();
 var edges = new vis.DataSet();
+
+var real_life_kiss = new vis.DataSet();
+var tv_show_kisses = new vis.DataSet();
 
 var DIR = "assets";
 
@@ -80,14 +84,31 @@ for (let i = 0; i < kiss.length; i++) {
     }
 
     edges.add(edge_obj);
+
+    if (edge_obj.color === 'purple' || edge_obj.color === 'pink') {
+        real_life_kiss.add(edge_obj);
+    } else {
+        tv_show_kisses.add(edge_obj);
+    }
 }
 
 // Create network
 const container = document.getElementById("mynetwork");
-var data = {
+var all_data = {
     nodes: nodes,
     edges: edges
 };
+
+var real_life_data = {
+    nodes: nodes,
+    edges: real_life_kiss
+}
+
+var tv_show_data = {
+    nodes: nodes,
+    edges: tv_show_kisses
+}
+
 var options = {
     autoResize: true,
     height: '100%',
@@ -137,19 +158,19 @@ var options = {
         randomSeed: 0,
     }
 };
-var network = new vis.Network(container, data, options);
+var network = new vis.Network(container, tv_show_data, options);
 
 // console.log(network.getSeed());
 
-// By default, select all nodes and edges
-var allNodeIds = network.body.data.nodes.getIds();
-var allEdgeIds = network.body.data.edges.getIds();
-network.selectNodes(allNodeIds);
+// var allNodeIds = network.body.data.nodes.getIds();
+// var allEdgeIds = network.body.data.edges.getIds();
 
 // Buttons
 // const searchNodeButton = document.getElementById("search-node-button");
 // const searchEdgeButton = document.getElementById("search-edge-button");
-// const findPathButton = document.getElementById("find-path");
+const showAllKisses = document.getElementById("show-all-kisses");
+const showRealLifeKisses = document.getElementById("show-real-life-kisses");
+const showTVShowKisses = document.getElementById("show-tv-show-kisses");
 
 // // Highlight matching nodes only
 // const displayResult = document.getElementById("my-node-result");
@@ -497,23 +518,22 @@ network.selectNodes(allNodeIds);
 //     }
 //     return edges;
 // }
+showAllKisses.addEventListener("click", function(event) {
+    event.preventDefault();
+    network.setData(all_data);
+});
 
   
-// findPathButton.addEventListener("click", function(event) {
-//     event.preventDefault();
-//     let source = document.getElementById("from-node").value.toLowerCase();
-//     let target = document.getElementById("to-node").value.toLowerCase();
-//     let startNodeId = findNodeIdByLabel(source);
-//     let endNodeId = findNodeIdByLabel(target);
-//     let nodes = data.nodes.get();
-//     let edges = data.edges.get();
+showRealLifeKisses.addEventListener("click", function(event) {
+    event.preventDefault();
+    network.setData(real_life_data);
+});
 
-//     let path = dijkstra(startNodeId, endNodeId, nodes, edges);
-    
-//     let edges_need_highlight = getEdgesFromPath(path);
-//     console.log(edges_need_highlight);
-//     network.selectEdges(edges_need_highlight);
-// });
+showTVShowKisses.addEventListener("click", function(event) {
+    event.preventDefault();
+    network.setData(tv_show_data);
+});
+
 
 
  
