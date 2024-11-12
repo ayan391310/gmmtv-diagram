@@ -72,7 +72,7 @@ for (let i = 0; i < kiss.length; i++) {
     } else {
         edge_obj.color = "green";
     }
-    
+
     if (kiss[i].dating) {
         edge_obj.color = "pink";
     } else if (in_real_life === true) {
@@ -132,6 +132,9 @@ var options = {
     physics: {
         enabled: false
     },
+    layout: {
+        improvedLayout: true,
+    }
 };
 var network = new vis.Network(container, data, options);
 
