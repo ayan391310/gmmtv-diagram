@@ -134,9 +134,12 @@ var options = {
     },
     layout: {
         improvedLayout: true,
+        randomSeed: 0,
     }
 };
 var network = new vis.Network(container, data, options);
+
+// console.log(network.getSeed());
 
 // By default, select all nodes and edges
 var allNodeIds = network.body.data.nodes.getIds();
